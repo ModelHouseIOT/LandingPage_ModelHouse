@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p,h1,h2,h3,h4,h5,h6,a,li{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 85%;
+    margin: auto;
+    padding: 80px 0;
+}
+/*********************** Head titles *****************/
+.head{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;  
+    background: #02AA8B;
+}
+.head .content{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+}
+.head .content .img{
+   grid-column-start: span 1; 
+}
+.head .content .img img{
+    width: 200px;
+    height: 60px;
+}
+.head .content .titles{
+    align-items: center;
+    grid-column-start: span 3;
+}
+.head .content .titles ul{
+    display: grid;
+    grid-column-start: span 5;
+    grid-template-columns: repeat(6,1fr);
+}
+.head .content .titles ul li{
+    font-weight: 500;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+}
+.head .content .titles ul li i{
+    font-size: 25px;
+}
+.menu{
+    display: none;
+}
+.head .content .titles ul li:hover{
+    color: #000;
+    transition: 0.5s;
+}
+.head .content .titles .current-title{
+    color: #000;
+    font-weight: 600;
+}
+/********************* Head Click *********************/
+.head-click{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    background: #02AA8B;
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+.head-click .content ul{
+    list-style: none;
+    text-align: center;
+}
+.head-click .content ul li{
+    font-size: 16px;
+    padding: 12px 0;
+    color: #fff;
+}
+.head-click .content ul li:hover{
+    color: #000;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.head-click .content ul .current-title{
+    color: #000;
+    font-weight: 600;
+    font-size: 19px;
+}
+/********************* Head Img **********************/
+.img-head{
+    width: 100%;
+    height: 60vh;
+    z-index: -1;
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.img-head .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-head .container h1{
+    color:#152031;
+    font-size: 50px;
+    width: 500px;
+    text-align: center;
+    padding: 20px 0;
+}
+.img-head .container p{
+    color: #BDBDBD;
+    font-weight: 300;
+    padding: 5px 0;
+}
+.img-head .container .service_app button{
+    width: 150px;
+    height: 40px;
+    background: #02AA8B;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.img-head .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-head .img img{
+    width: 500px;
+    margin: auto;
+}
+.img-head .container .service_app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-top: 25px;
+}
+.img-head .container .service_app i{
+    color: #02AA8B;
+    font-size: 25px;
+}
+/*************** Important Features ******************/
+
+.AboutUs h1{
+    font-size: 45px;
+    color: #152031;
+    padding-bottom: 30px;
+}
+.AboutUs .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.AboutUs .content p{
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.AboutUs .content .img-import{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.AboutUs .content .img-import img{
+    width: 350px;
+    border-radius: 15px;
+}
+/*Services*/
+.services{
+    padding: 45px 0;
+}
+.services h1{
+    font-size: 45px;
+    color: #152031;
+    padding-bottom: 30px;
+}
+.services .content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.services .content .serve h2{
+    font-size: 20px;
+    padding: 25px 0;
+}
+.services .content .customers{
+    width: 70%;
+    margin: auto;
+}
+.services .content .business {
+    width: 100%;
+    margin: auto;
+}
+.services .content .serve img{
+    width: 100%;
+}
+.services .content .serve h2{
+    text-align: center;
+    padding-top: 35px;
+}
+/******************* Offers ****************/
+
+.offers h1{
+    font-size: 45px;
+}
+.time_offers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+.time_offers .month{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #02AA8B;
+    cursor: pointer;
+    transition: .5s;
+}
+.time_offers .month:hover{
+    background: #02AA8B;
+    color: #fff;
+}
+.offers .content .text_offer{
+    display: flex;
+    margin: 20px 0;
+}
+.offers .content .text_offer i {
+    color: #02AA8B;
+    padding-right: 25px;
+}
+.offers .content .text_offer p{
+    font-weight: 700;
+}
+/******************** footer *****************/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #02AA8B;
+}
+footer .content {
+    width: 85%;
+    display: grid;
+    padding: 25px 0;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+footer .content .img{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+footer .content .img img{
+    width: 250px;
+    border-radius: 10px;
+}
+footer .content .social_media{
+    display: flex;
+}
+footer .content .social_media i{
+    font-size: 20px;
+    color: #152031;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+footer .content .social_media i:hover{
+    background: #1A1B20;
+    color: #0B6EFE;
+    border: 1px solid #0B6EFE;
+    transition: 0.5s;
+}
+footer .content .copyright{
+    text-align: center;
+}
+footer .content .copyright h2{
+    color: #152031;
+}
+footer .content .copyright p{
+    color: #152031;
+    padding: 15px 0;
+}
+.aparecer{
+    transition: 0.3s;
+    transform: translate(0);
+}
+/************** Reponsive ***************/
+
+@media screen and (max-width:1000px){
+    .menu{
+        display: block;
+        padding: 0 25px;
+    }
+    .cambio{
+        display: none;
+    }
+    .head .container .titles ul{
+        display: flex;
+        justify-content: end;
+    }
+    .moon{
+        padding: 0 25px;
+    }
+}
+@media screen and (max-width:900px){
+    .steps .container .step{
+        grid-column-start: span 2;
+    }
+    .steps .container .step_1 .inform_step{
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .steps .container .step_1 .inform_step h5{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .steps .container .step_2{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .steps .container .step_3{
+        width: 80%;
+    }
+    .inform_step{
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width:750px){
+    .important .container .imports{
+        grid-column-start: span 2;
+        padding-bottom: 40px;
+    }
+    .important .container .img-import{
+        grid-column-start: span 2;
+    }
+    .about .description{
+        width: 450px;
+    }
+    .about .container .mision, .about .container .vision{
+        margin: 25px auto;
+        grid-column-start: span 2;
+    }
+    .services .container .customers, .services .container .business{
+        margin: 25px auto;
+        grid-column-start: span 2;
+    }
+    .img-head .container h1{
+        font-size: 40px;
+    }
+    .img-head .container p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:450px){
+    .about .description{
+        width: 250px;
+    }
+    .steps .container .step_2, .steps .container .step_3{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .steps .container .step_2 img, .steps .container .step_2 .inform_step{
+        grid-column-start: span 2;
+        margin: auto;
+        text-align: center;
+    }
+    .steps .container .step_3 img, .steps .container .step_3 .inform_step{
+        grid-column-start: span 2;
+        text-align: center;
+        margin: auto;
+    }
+    .steps .container{
+        width: 100%;
+    }
+    .steps .container .step_2 img, .steps .container .step_3 img{
+        width: 250px;
+    }
+    .inform_step h3{
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+    }
+    .steps .container .step_3 .inform_step, .steps .container .step_2 .inform_step{
+        width: 80%;
+        margin: 25px auto;
+    }
+    .aplication .container h1{
+        font-size: 35px;
+    }
+    .aplication .container p{
+        font-size: 15px;
+    }
+    .aplication .container button{
+        width: 120px;
+        font-size: 15px;
+    }
+    .img-head .container h1{
+        font-size: 30px;
+    }
+    .img-head .container p{
+        font-size: 13px;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .img-head .container button{
+        width: 120px;
+        font-size: 15px;
+    }
+    footer .container img{
+        grid-column-start: span 2;
+        margin: 15px auto;
+    }
+    footer .container .social_media{
+        grid-column-start: span 2;
+        margin: 15px auto;
+    }
+    .important h1, .about h1, .steps h1, .services h1{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:360px){
+    .img-head .container p{
+        width: 80%;
+    }
+}
