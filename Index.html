@@ -10,159 +10,136 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/ad07fec59d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="css.css">
     <title>ModelHouse</title>
 </head>
-
 <body>
-    <header id="home" class="container">
-        <div class="head">
-            <div class="content">
-                <div class="img">
-                    <img src="img/logo.png" alt="" />
-                </div>
-                <div class="titles">
-                    <ul>
-                        <a href="#home">
-                            <li class="current-title cambio">Home</li>
-                        </a>
-                        <a href="#about">
-                            <li class="cambio">About us</li>
-                        </a>
-                        <a href="#services">
-                            <li class="cambio">Services</li>
-                        </a>
-                        <a href="#offers">
-                            <li class="cambio">Offers</li>
-                        </a>
-                        <a href="#footer">
-                            <li class="cambio">Footer</li>
-                        </a>
-                        <li><i class="fa-solid fa-bars menu"></i></li>
-                    </ul>
-                </div>
-            </div>
+<header class="header">
+    <div class="logo">
+        <img src="../modelhouse_landingpage/img/logo.png" alt="Brand">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About the team</a></li>
+            <li><a href="#plans">Plans</a></li>
+            <li><a href="#galery">Galery</a></li>
+        </ul>
+</header>
+
+<header id="home" class="hero">
+    <div class="text-hero">
+        <h1>Welcome to Model House</h1>
+        <p>Would you like to seek or provide your services in real estate remodeling?</p>
+        <p>Come and live this incredible experience!</p>
+        <a href="" class="cta">Go to Web Site</a> 
+    </div>
+    <div class="svg-hero"style="height: 150px; overflow: hidden;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+    <path d="M-0.00,49.85 C196.04,177.65 356.88,-73.32 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: #fff;">
+    </path></svg></div>
+</header>
+
+<section id="services" class="wave-container website">
+    <img src="../modelhouse_landingpage/img/img_movil.svg" alt="">
+    <div class="container-main-text">
+        <h2 class="title left">It's a mobile app</h2>
+        <p class="text">We offer a mobile application for users who want to have an easy and fast access to search remodel companies on our service.</p>
+        <a href="" class="cta">Learn more</a>
+    </div>
+</section>
+
+<section class="info-last">
+    <div class="container last-section">
+        <div class="container-main-text">
+            <h2 class="title left">...Also a web site</h2>
+            <p class="text">You can find or offer remodel services, manage your account and the proccess of your current order. Different tools for companies to track
+                the status of your service with a lot of details.</p>
+            <a href="" class="cta">Learn more</a>
         </div>
-        <div class="head-click">
-            <div class="content">
-                <ul>
-                    <a href="#home">
-                        <li class="current-title move_up">Home</li>
-                    </a>
-                    <a href="#about">
-                        <li class="move_up">About us</li>
-                    </a>
-                    <a href="#services">
-                        <li class="move_up">Services</li>
-                    </a>
-                    <a href="#offers">
-                        <li class="move_up">Offers</li>
-                    </a>
-                    <a href="#footer">
-                        <li class="move_up">Footer</li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-        <div class="img-head" id="img-head">
-            <div class="img">
-                <img src="img/img_principal.svg" alt="">
-            </div>
-            <div class="content">
-                <h1>WELCOME TO THE MODEL HOUSE</h1>
-                <p>
-                    Would you like to seek or provide your services in real estate remodeling?
-                </p>
-                <p>Come and live this incredible experience!</p>
-                <div class="service_app">
-                    <button>WEB SITE</button>
-                    <i class="fa-brands fa-google-play"></i>
-                    <i class="fa-brands fa-app-store"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="AboutUs container" id="about">
-            <h1>About Us</h1>
-            <div class="content">
-                <p>We are a web application development team that aims to meet the expectations of our customers in order
-                to satisfy their requests. Also, exhaustive market research was carried out to achieve effective
-                solutions, so that consumers can use our services with comfort and confidence. In addition, we use
-                innovative technology to solve customer problems</p>
-                <div class="img-import">
-                    <img src="img/img_about.jpg" alt="" />
-                </div>
-            </div>
-        </section>    
-        <section class="services container" id="services">
-            <h1>Services</h1>
-            <div class="content">
-                <div class="customers serve">
-                    <img src="img/img_movil.svg" alt="">
-                    <h2>Movil App</h2>
-                </div>
-                <div class="business serve">
-                    <img src="img/img_desktop.svg" alt="">
-                    <h2>Web Site</h2>
-                </div>
-            </div>
-        </section>
-        <section class="offers container" id="offers">
-            <h1>Offers</h1>
-            <div class="time_offers">
-                <div class="month">
-                    <h1>9.99 $</h1>
-                </div>
-                <div class="month">
-                    <h1>34.99 $</h1>
-                </div>
-                <div class="month">
-                    <h1>200.00 $</h1>
-                </div>
-            </div>
-            <div class="content">
-                <div class="text_offer">
-                    <i class="fa-solid fa-check"></i>
-                    <p>Project your project as a company</p>
-                </div>
-                <div class="text_offer">
-                    <i class="fa-solid fa-check"></i>
-                    <p>View your orders</p>
-                </div>
-                <div class="text_offer">
-                    <i class="fa-solid fa-check"></i>
-                    <p>View your requests</p>
-                </div>
-                <div class="text_offer">
-                    <i class="fa-solid fa-check"></i>
-                    <p>Get clients and present your service</p>
-                </div>
-                <div class="text_offer">
-                    <i class="fa-solid fa-check"></i>
-                    <p>Manager your credit cards</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="footer">
-        <div class="content">
-            <div class="social_media">
+        <img src="../modelhouse_landingpage/img/img_desktop.svg" alt="">
+    </div>
+</section>
+
+<section id="about" class="aboutteam">
+    <div class="container">
+        <h2 class="title left">About the team</h2>
+        <p>We are a multiplatform application development team that aims to meet the expectations of our customers in order
+            to satisfy their requests. Also, exhaustive market research was carried out to achieve effective
+            solutions, so that consumers can use our services with comfort and confidence. In addition, we use
+            innovative technology to solve customer problems.</p>
+    </div>
+</section>
+
+<section id="plans" class="cards container">
+    <h2 class="title">Our plans</h2>
+    <div class="content-cards">
+        <article class="card">
+            <h2 class="title-card">Free</h2>
+                <h3>USD$0.00</h3>
+                <a href="" class="cta">Try for free</a>
+                    <p>· Free register</p>
+                    <p>· View your requests</p>
+                    <p>· Explore the catalog of remodel companies</p>
+                    <p>· See and write reviews of projects</p>
+                    <p>· Receive notifications</p>
+        </article>
+        <article class="card">
+            <h2>Standard</h2>
+                <h3>USD$9.99</h3>
+                <a href="" class="cta">Pay now</a>
+                    <p>-> Monthly</p>
+                    <p>· Same as a free user </p>
+                    <p>+ Enable the company tag</p>
+                    <p>+ You can accept remodel requests</p>
+                    <p>+ Publish your projects as a company</p>
+                    <p>+ Get clients and present your service</p>
+        </article>
+        <article class="card">
+            <h2 class="title-card">Premium</h2>
+                <h3>USD$29.99</h3>
+                <a href="" class="cta">Pay now</a>
+                    <p>-> Yearly</p>
+                    <p>· Same as a standard user</p>
+                    <p>+ Your projects have more visibility in the explorer</p>
+                    <p>+ Remove annoying adds</p>
+        </article>
+    </div>
+</section>
+
+<section id="galery" class="galery">
+    <div class="container">
+        <h2 class="title">Some projects of the companies here</h2>
+        <article class="galery-cont">
+             <img src="img/uno.jpg" alt="">
+             <img src="img/dos.jpg" alt="">
+             <img src="img/tres.jpg" alt="">
+             <img src="img/cuatro.jpg" alt="">
+             <img src="img/cinco.jpg" alt="">
+             <img src="img/seis.jpg" alt="">
+        </article>
+    </div>
+    <div class="svg-wave" style="height: 150px; overflow: hidden;" >
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M-0.00,49.85 C196.04,177.65 356.88,-73.32 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: #02AA8B;">
+        </path></svg></div>
+    </section>
+
+<footer id="contact">
+    <div class="container">
+        <h2 class="title">Social Media</h2>
+        <div class="footer-content">
+            <div class="socialmedia">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <i class="fa-brands fa-youtube"></i>
             </div>
-            <div class="copyright">
-                <h2>Manger your credit cards</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="img">
-                <img src="img/logo.png" alt="">
-            </div>
         </div>
-    </footer>
-    <script src="click_head.js"></script>
-</body>
+        <p>  © 2023 Model House. All rights reserved</p>
+    </div>
+</footer>
 
+</body>
 </html>
